@@ -8,4 +8,8 @@ function APPYCompany(request, response) {
         dev,
         company})
 }
+
+function DeleteAllData(){
+
+}
 export default APPYCompany

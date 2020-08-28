@@ -1,17 +1,20 @@
 version: '3.4'
 
 services:
-  backendBoy:
-    image: backend
-    build: .
-    environment:
-      NODE_ENV: production
-      MONGO_END_POINT: 'mongodb://root:ipx515@mongo/?authSource=admin'
-    ports:
-      - 8081:3000
+  # backendBoy:
+  #   image: backend
+  #   build: .
+  #   environment:
+  #     NODE_ENV: production
+  #     MONGO_END_POINT: 'mongodb://root:ipx515@mongo/?authSource=admin'
+  #   ports:
+  #     - 8081:3000
+
   
   mongo:
     image: mongo
     environment:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: ipx515
+    ports:
+      - 1000:27017
