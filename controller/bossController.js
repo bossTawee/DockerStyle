@@ -17,6 +17,7 @@ function putUrloveonTop(req, res) {
     const { name } = req.body
     const { id } = req.params.id
     let topic = Topic.updateOne({_id: id}, {name})
+    //Anyoung
     // topic.save(function(err, topic){
     //     if(err){
     //         res.status(400).json({message: "Cannot save"})
@@ -26,9 +27,15 @@ function putUrloveonTop(req, res) {
     // }
     // Topic.save(topic)
     res.json(topic)
+    
+}
+
+function createUser(req, res) {
+
 }
 
 export default  { 
     getBoss,
-    putUrloveonTop 
+    putUrloveonTop,
+    createUser
 }
