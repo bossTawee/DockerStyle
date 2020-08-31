@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run build && node dist",
-    "dev": "export MONGO_END_POINT=mongodb://root:ipx515@localhost:1000/dockerstyle?authSource=admin && nodemon --exec babel-node ./server.js"
+    "dev": "export MONGO_END_POINT=mongodb://root:ipx515@localhost/dockerstyle?authSource=admin && nodemon --exec babel-node ./server.js"
   },
   "author": "",
   "license": "ISC",
